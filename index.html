@@ -8,53 +8,91 @@
 </head>
 <body>
     <header>
-        <div class="topnav" id="myTopnav">
-            <a href="index.html" class="active">Présentation</a>
-            <a href="tickets.html">Billetterie</a>
-            <a href="index.html#contact" onclick="className += 'active'">Nous contacter</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
-        </div>
+        <ul class="navbar">
+            <li class="navbar">
+                <a href="index.html" class="navbar active">Présentation</a>
+                <a href="tickets.html" class="navbar">Billetterie</a>
+                <a href="index.html#contact" class="navbar" onclick="className += 'active'">Nous contacter</a>
+            </li>
+        </ul>
         <h1>CRP Ouest 23</h1>
     </header>
 
     <section id="home">
-        <img src="Data/032021.jpg" alt="Photo of two sit students taken from the back, they both wear bombers with the SEIO logo, outside">
-        <p>Welcome to my website!</p>
+        <div>
+            <img src="Data/032021.jpg" alt="Photo of two sit students taken from the back, they both wear bombers with the SEIO logo, outside" width="100%">
+        </div>
+        <p>Bienvenue sur le site web du Congrès Régional de l'Ouest 2023 (CRPO23) !&#10;
+        Sur ce site vous trouverez l'ensemble des informations utiles pour que ce magnifique congrès qui aura lieu dans les locaux de l'ESEO à Angers.
+        </p>
     </section>
     <section id="contact">
         <h1>Nous contacter</h1>
-        <div style="display: flex; flex-wrap: wrap;">
-        <form>
-            Formulaire de contact
-            <label>
-                Prénom
-                <input type="text" name="firstname" placeholder="Jacques">
-            </label>
-            <label>
-                Nom
-                <input type="text" name="lastname" placeholder="Dubois">
-            </label>
-            <label>
-                Email
-                <input type="email" name="email" placeholder="jacques.dubois@super-je.org">
-            </label>
-            <label>
-                Objet
-                <input type="text" name="object" placeholder="Régime alimentaire">
-            </label>
-            <label>
-                Contenu du message
-                <textarea name="content" placeholder="Bonjour,&#10;J'ai un régime particulier...&#10;Cordialement"></textarea>
-            </label>
-            <input type="submit" value="Envoyer" onclick="alert('Message envoyé!')">
-        </form>
-        <h3 style="margin-left: 20px">Instagram</h3>
+        <div class="twosides">
+            <form>
+                <h3>Formulaire de contact</h3>
+                <label>
+                    Prénom
+                    <input type="text" name="firstname" placeholder="Jacques">
+                </label>
+                <label>
+                    Nom
+                    <input type="text" name="lastname" placeholder="Dubois">
+                </label>
+                <label>
+                    Email
+                    <input type="email" name="email" placeholder="jacques.dubois@super-je.org">
+                </label>
+                <label>
+                    Objet
+                    <input type="text" name="object" placeholder="Régime alimentaire">
+                </label>
+                <label>
+                    Contenu du message
+                    <textarea name="content" placeholder="Bonjour,&#10;J'ai un régime particulier...&#10;Cordialement"></textarea>
+                </label>
+                <input type="submit" value="Envoyer" onclick="alert('Message envoyé!')">
+            </form>
+            <div style="margin-left: 20px">
+                <h3>Nos réseaux</h3>
+                <ul class="socials">
+                    <li class="socials">
+                        <a class="socials" href="https://www.instagram.com/seio_je/">
+                            <div>
+                                <img class="icon" src="Data/icons8-instagram-480.png" alt="Logo of Instagram">
+                            </div>
+                            Instagram
+                        </a>
+                    </li>
+                    <li class="socials">
+                        <a class="socials" href="https://www.linkedin.com/company/seio/">
+                            <div>
+                                <img class="icon" src="Data/icons8-linkedin-480.png" alt="Logo of Instagram">
+                            </div>
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
     <footer>
         <p>&copy; 2023 SEIO - Junior-Entreprise</p>
+        <div style="display: inline-block">
+            Téléphone :
+            <a href="tel:+33762563907" style="color: white">+33 (0)7 62 56 39 07</a>
+        </div>
+        <div style="display: inline-block">
+            Mail :
+            <a href="mailto:contact@seio.org" style="color: white">contact@seio.org</a>
+        </div>
+        <div style="display: inline-block">
+            Adresse :
+            <a href="https://www.google.com/maps?q=SEIO+Junior+Entreprise" style="color: white">10 Boulevard Jean Jeanneteau - 49107 Angers</a>
+        </div>
+        <div>
+            <a href="mentions.html" style="color: white">Mentions légales</a>
+        </div>
     </footer>
 </body>
 </html>
