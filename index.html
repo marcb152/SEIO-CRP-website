@@ -2,19 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>SEIO - CRPO23</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="script" href="script.ts">
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
-        <h1>Your Website Name</h1>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="active">Présentation</a>
+            <a href="tickets.html">Billetterie</a>
+            <a href="index.html#contact" onclick="className += 'active'">Nous contacter</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <h1>CRP Ouest 23</h1>
     </header>
-    <section>
+
+    <section id="home">
+        <img src="Data/032021.jpg" alt="Photo of two sit students taken from the back, they both wear bombers with the SEIO logo, outside">
         <p>Welcome to my website!</p>
     </section>
+    <section id="contact">
+        <h1>Nous contacter</h1>
+        <div style="display: flex; flex-wrap: wrap;">
+        <form>
+            Formulaire de contact
+            <label>
+                Prénom
+                <input type="text" name="firstname" placeholder="Jacques">
+            </label>
+            <label>
+                Nom
+                <input type="text" name="lastname" placeholder="Dubois">
+            </label>
+            <label>
+                Email
+                <input type="email" name="email" placeholder="jacques.dubois@super-je.org">
+            </label>
+            <label>
+                Objet
+                <input type="text" name="object" placeholder="Régime alimentaire">
+            </label>
+            <label>
+                Contenu du message
+                <textarea name="content" placeholder="Bonjour,&#10;J'ai un régime particulier...&#10;Cordialement"></textarea>
+            </label>
+            <input type="submit" value="Envoyer" onclick="alert('Message envoyé!')">
+        </form>
+        <h3 style="margin-left: 20px">Instagram</h3>
+        </div>
+    </section>
     <footer>
-        <p>&copy; 2023 Your Name</p>
+        <p>&copy; 2023 SEIO - Junior-Entreprise</p>
     </footer>
 </body>
 </html>
