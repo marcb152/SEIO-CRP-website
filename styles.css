@@ -131,6 +131,20 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* ============= TICKETS DIVISIONS ============= */
+div.tickets {
+    text-align: center;
+    min-width: 250px;
+    border: solid var(--background-color);
+    margin: 20px;
+}
+
+/* ============= TICKETS DIVISIONS ============= */
+div.tickets:hover {
+    background: var(--foreground-color);
+    color: white;
+}
+
 /* ============= CONTACT FORMS INPUTS ============= */
 input, textarea{
     display: block;

@@ -9,15 +9,35 @@
     <header>
         <ul class="navbar">
             <li class="navbar">
-                <a href="index.html" class="navbar active">Présentation</a>
-                <a href="tickets.html" class="navbar">Billetterie</a>
+                <a href="index.html" class="navbar">Présentation</a>
+                <a href="tickets.html" class="navbar active">Billetterie</a>
                 <a href="index.html#contact" class="navbar" onclick="className += 'active'">Nous contacter</a>
             </li>
         </ul>
         <h1>CRP Ouest 23</h1>
     </header>
     <section>
-        Coucou la billetterie👋
+        <h1>Coucou la billetterie👋</h1>
+        <div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-around; align-items: stretch;">
+            <div class="tickets">
+                <h2 style="text-align: center">15 €</h2>
+                <p>
+                    Pass une journée
+                </p>
+            </div>
+            <div class="tickets">
+                <h2 style="text-align: center">30 €</h2>
+                <p>
+                    Pass deux jours
+                </p>
+            </div>
+            <div class="tickets" onclick="alert('Vous êtes riches 💲')">
+                <h2 style="text-align: center">60 €</h2>
+                <p>
+                    Pass deux jours et hôtel
+                </p>
+            </div>
+        </div>
     </section>
     <footer>
         <p>&copy; 2023 SEIO - Junior-Entreprise</p>
